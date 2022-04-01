@@ -1,0 +1,192 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elementos base*/ 
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;
+background-color: var(--preta);
+font-weight: 200;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
+  margin-left: 5px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+header nav a:hover {
+  color: #fff;
+}
+
+
+/*filme principal*/
+.filme-principal{
+  font-size:16px;
+
+  background:  linear-gradient(to left, transparent 1%, rgba(5, 5, 5, 0.418) 0%), url(/imgs/fundoav.jpg);
+
+  
+  height:68vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 10% 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.filme-principal .descricao { 
+  margin-bottom: 45px;
+  margin-top: 1%;
+
+}
+
+.filme-principal .titulo {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10%;
+
+}
+
+.botao {
+  background-color:rgba(0,0,0, .50);
+  border: none;
+  color: white;
+
+  padding: 16px 35px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor:pointer;
+  transition: .3s ease all;
+
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+ .container { 
+margin-left: 35px;
+margin-right: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*info page*/
+
+article { 
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+main article {
+width: 90%;
+margin: auto;
+}
+
+main h4 {
+ text-transform: uppercase;
+ font-size: 1.5em;
+ letter-spacing: 3px;
+ margin-bottom: 25px;
+ color: #f81818;
+}
+
+ol li {
+padding: 10px;
+}
+
+article a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+article a:hover { 
+  color: red;
+}
+
+li {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+#info-top {
+ text-align: center;
+ line-height: 2em;
+}
+
+.video { 
+display: block;
+text-align: left;
+padding: 25px;
+}
+
+.info-movie {
+  border-bottom: solid rgba(255, 0, 0, 0.178) 1px;
+}
+
+
+.carrosel-atores {
+margin-top: 30px;
+}
+
+
+/*info grid*/
+.row {
+  overflow: auto;
+}
+
+.col-2 {
+  width: 48.5%;
+  float: left;
+}
+
+.col-2:first-child {
+  margin-right: 1.5%;
+}
+
+.col-2:last-child {
+  margin-right: 1.5%;
+}
